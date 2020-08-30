@@ -1,0 +1,26 @@
+<view class="container padding-60">
+	<view class="background-curve"></view>
+	<view class="content">
+		<view class="card">
+			<view class="card-body small-padding">
+				<steps steps="{{steps}}" active="{{activeIndex}}">
+					<view slot="step1">
+						<view class="box" bindtap="test"></view>
+					</view>
+					<view slot="step2">
+						<view class="box"></view>
+					</view>
+					<view slot="step3">
+						<view class="box"></view>
+					</view>
+				</steps>
+			</view>
+		</view>
+	</view>
+	<view class="footer small-btn-footer">
+		<view class="footer-wrap">
+			<van-button type="info" size="small" block bind:click="next">上一步</van-button>
+			<van-button type="info" size="small" block bind:click="next">确认&培训</van-button>
+		</view>
+	</view>
+</view>

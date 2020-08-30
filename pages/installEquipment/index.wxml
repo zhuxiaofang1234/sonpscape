@@ -1,0 +1,58 @@
+<view class="container padding-60">
+	<view class="background-curve"></view>
+	<view class="content">
+		<view class="card">
+			<view class="card-body small-padding">
+				<view class="row-item row-line bor-bottom pb-20">
+					<text class="row-name text-l">设备SN:</text>
+					<view class="row-content">
+						<input type="text" class="sono-input" placeholder="请输入设备SN" placeholder-class="placeholder-text" />
+					</view>
+				</view>
+				<view class="row-item bor-bottom row-line">
+					<text class="row-name text-l">产品类型:</text>
+					<view class="row-content">
+						<van-radio-group value="{{ radio }}" bind:change="onChange">
+							<van-radio name="1" icon-size="18px">超声</van-radio>
+							<van-radio name="2" icon-size="18px">内镜</van-radio>
+							<van-radio name="3" icon-size="18px">检验</van-radio>
+						</van-radio-group>
+					</view>
+				</view>
+				<view class="row-item bor-bottom row-line">
+					<text class="row-name text-l">装机医院:</text>
+					<view class="row-content">
+						<input type="text" class="sono-input" placeholder="请选择装机医院" placeholder-class="placeholder-text" />
+					</view>
+				</view>
+				<view class="row-item bor-bottom row-line">
+					<text class="row-name text-l">医院科室:</text>
+					<view class="row-content">
+						<input type="text" class="sono-input" placeholder="请输入医院科室" placeholder-class="placeholder-text" />
+					</view>
+				</view>
+				<view class="row-item bor-bottom row-line">
+					<text class="row-name text-l">科室联系人:</text>
+					<view class="row-content">
+						<input type="text" class="sono-input" placeholder="请输入科室联系人" placeholder-class="placeholder-text" />
+					</view>
+				</view>
+				<view class="row-item bor-bottom row-line">
+					<text class="row-name text-l">联系方式:</text>
+					<view class="row-content">
+						<input type="text" class="sono-input" placeholder="请输入科室联系方式" placeholder-class="placeholder-text" />
+					</view>
+				</view>
+				<view class="textarea-wrap">
+					<view class="label-text">装机备注：</view>
+					<textarea placeholder="请输入内容" placeholder-class="placeholder-text" class="textarea" />
+					</view>
+		</view>
+	</view>
+	</view>
+	<view class="footer">
+		<view class="footer-wrap">
+			<van-button type="info"  block bind:click="next">安装确认</van-button>
+		</view>
+	</view>
+</view>

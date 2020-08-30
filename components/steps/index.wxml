@@ -1,0 +1,23 @@
+<view class="steps-wrapper steps--vertical">
+	<!--步驟1-->
+	<view class="step-item is-vertical" wx:for="{{steps}}" wx:key="index">
+		<view class="step-head is-finish">
+			<view class="step-line">
+				<text class="step_line-inner {{(index < active ? active-action : active-start)}}"></text>
+			</view>
+			<view class="step_icon is-text">
+				<view class="step__icon-inner">{{index+1}}</view>
+			</view>
+		</view>
+		<view class="step-main">
+			<view class="step-title_wrap">
+				<view class="step-title is-finish">{{item.text}}</view>
+				<view class="step-title_rate"><van-rate value="{{ value }}" bind:change="onChange" /></view>
+			</view>
+
+			<view class="step__description is-finish">
+				<slot name="step{{index+1}}"></slot>
+			</view>
+		</view>
+	</view>
+</view>

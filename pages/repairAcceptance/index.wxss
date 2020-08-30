@@ -1,0 +1,43 @@
+/* pages/repairAcceptance/index.wxss */
+.container {
+  padding: 0 60rpx;
+}
+.toptips{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+.card-head{
+  padding:16rpx 20rpx 0 20rpx;
+  border-bottom:1px solid #ddd;
+}
+
+.card-body{
+  padding-top:0;
+}
+.row-item {
+  display: flex;
+  font-size: 28rpx;
+  margin-bottom:20rpx;
+}
+
+.row-item .row-name {
+  font-size: 28rpx;
+  color: #323232;
+  text-align:right;
+  width:130rpx;
+}
+.talbe-wrap{
+  text-align: center;
+}
+
+.row-item .row-content {
+  flex: 1;
+  padding-left:28rpx;
+}
+
+.uploader-name{
+  padding:20rpx 0;
+  text-align: left;
+}

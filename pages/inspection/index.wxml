@@ -1,0 +1,55 @@
+<view class="container">
+  <view class="background-curve"></view>
+  <view class="card">
+    <view class="card-body">
+      <view class="fault-content">
+        <view class="content-title">1，市地电压，零地电压</view>
+        <view class="photo">
+         <van-uploader>
+          <view class="uploader-wrap">
+            <view class="iconfont icon-tubiaozhizuo-"></view>
+            <view>处理前</view>
+          </view>
+         </van-uploader>
+         <van-uploader>
+          <view class="uploader-wrap">
+            <view class="iconfont icon-tubiaozhizuo-"></view>
+            <view>处理后</view>
+          </view>
+         </van-uploader>
+        </view>
+         <view class="textarea-wrap">
+          <view class="label-text">备注：</view>
+           <textarea placeholder="请输入内容" placeholder-class="placeholder-text" class="textarea"/>
+        </view>
+      </view>
+      <view class="fault-content">
+        <view class="content-title">2,测试数据</view>
+           <view class="photo">
+         <van-uploader>
+          <view class="uploader-wrap">
+            <view class="iconfont icon-tubiaozhizuo-"></view>
+            <view>处理前</view>
+          </view>
+         </van-uploader>
+         <van-uploader>
+          <view class="uploader-wrap">
+            <view class="iconfont icon-tubiaozhizuo-"></view>
+            <view>处理后</view>
+          </view>
+         </van-uploader>
+        </view>
+         <view class="textarea-wrap">
+          <view class="label-text">备注：</view>
+           <textarea placeholder="请输入内容" placeholder-class="placeholder-text" class="textarea"/>
+        </view>
+      </view>
+      <view class="add-btn"><i class="iconfont icon-icon-test"></i></view>
+    </view>
+  </view>
+  <view class="form-footer">
+   <van-button type="info" size="small" block bind:click="goBack">上一步</van-button>
+   <van-button type="info" size="small" block bind:click="next">下一步</van-button>
+  </view>
+  
+</view>

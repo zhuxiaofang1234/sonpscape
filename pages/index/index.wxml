@@ -1,18 +1,49 @@
 <!--index.wxml-->
 <view class="container">
-	<view class="userinfo">
-		<van-button type="default">默认按钮</van-button>
-		<van-button type="primary">主要按钮</van-button>
-		<van-button type="info">信息按钮</van-button>
-		<van-button type="warning">警告按钮</van-button>
-		<van-button type="danger">危险按钮</van-button>
-		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-		<block wx:else>
-			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
-		</block>
+	<view class="swiper-wraper">
+		<swiper 
+		      indicator-dots="{{indicatorDots}}"
+					indicator-color="rgba(0, 0, 0, .3)"
+					indicator-active-color="#fff"
+          autoplay="{{autoplay}}"
+				  interval="{{interval}}"
+				  duration="{{duration}}"
+					circular="true"
+					>
+        <block wx:for="{{images}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item">
+							<image src="{{item}}" class="swiper-img"></image>
+						</view>
+          </swiper-item>
+        </block>
+      </swiper>
 	</view>
-	<view class="usermotto">
-		<text class="user-motto">{{motto}}</text>
+	<view class="notice-wraper">
+		<view class="notice-bar-wraper">
+			<van-notice-bar
+				left-icon="volume-o"
+				text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
+			/>
+		</view>
+		<view class="more-notice"><text class="more-notice-text">更多</text></view>
+	</view>
+	<view class="menu-wraper">
+		  <view class="menu-item" hover-class="active" bindtap="goRepair">
+				<text class="iconfont icon-tianjia align-middle"></text>
+				<text class="icon-text align-middle">现场维修</text>
+			</view>
+			<view class="menu-item" hover-class="active" bindtap="goInstall">
+				<text class="iconfont icon-tianjianaozhong align-middle"></text>
+				<text class="icon-text align-middle">现场装机</text>
+			</view>
+			<view class="menu-item" hover-class="active">
+				<text class="iconfont icon-job align-middle"></text>
+				<text class="icon-text align-middle">我的任务</text>
+			</view>
+			<view class="menu-item" hover-class="active">
+			  <text class="iconfont icon-iconxd align-middle"></text>
+				<text class="icon-text align-middle">设备保养</text>
+			</view>
 	</view>
 </view>

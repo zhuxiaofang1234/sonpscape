@@ -1,0 +1,47 @@
+/* pages/fault/index.wxss */
+
+.row-item.row-line {
+  position:relative;
+  margin-bottom:0;
+  padding:10rpx 0;
+  height:80rpx
+}
+
+
+.row-item .row-name {
+  width: 148rpx;
+}
+
+.sono-input {
+  width: 100%;
+  padding: 20rpx 10rpx;
+  height:40rpx;
+  color: #323233;
+}
+
+.van-radio {
+  width: 33%;
+  float: left;
+  padding: 10rpx 0;
+}
+
+
+.van-radio .van-radio__label{
+  margin-left:10rpx;
+}
+
+.textarea-wrap{
+  margin-top:30rpx;
+}
+.textarea{
+  width: 100%;
+  height:150rpx;
+  margin-top:20rpx;
+  padding:20rpx 10rpx 10rpx;
+  box-sizing: border-box;
+  border:1px solid #ebedf0;
+}
+
+.footer{
+  height:160rpx;
+}

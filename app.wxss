@@ -1,10 +1,185 @@
 /**app.wxss**/
+@import 'iconfont.wxss';
+
+page {
+  background-color: #fff;
+  height: 100%;
+}
+
 .container {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+.container.padding-60 {
+  padding: 0 60rpx
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+}
+
+.footer {
+  height: 180rpx;
+  width: 100%;
+}
+
+.footer .footer-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-wrap .van-button {
+  width: 560rpx;
+}
+
+.footer .footer-wrap .van-button.van-button--small{
+  width:184rpx
+}
+
+.align-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/***背景曲线****/
+.background-curve {
+  width: 746rpx;
+  border: 1px solid #5299ec;
+  height: 350rpx;
+  background-color: #8fbef5;
+  border-radius: 0 0 300rpx 300rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -999;
+}
+
+/***卡片样式***/
+.card {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+  box-shadow: 4rpx 8rpx 8rpx #ccc;
+  border-radius: 6rpx;
+}
+
+.card-body {
+  padding: 40rpx;
+}
+
+.card-body.small-padding {
+  padding: 30rpx;
+}
+
+.form-footer {
+  margin: 52rpx 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 60rpx;
+  box-sizing: border-box;
+}
+
+.form-footer .van-button--small {
+  padding: 20rpx 46rpx
+}
+
+/******文字颜色*****/
+.red {
+  color: red;
+}
+
+
+/***表单样式**/
+.form-item {
+  display: flex;
+  -webkit-display: flex;
+  background-color: #fff;
+  color: #323233;
+  margin-top: 20rpx;
+  align-items: center;
+  padding:30rpx 16rpx;
+}
+
+.from-wrap {
+  flex: 1;
+  margin-left: 80rpx;
+  font-size: 28rpx;
+}
+
+.label-text {
+  color: #323232;
+  font-size: 28rpx;
+}
+
+/**************************一行排列*******************************/
+.row-item {
+  display: flex;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+  align-items: center;
+}
+
+.row-item .row-name {
+  font-size: 28rpx;
+  color: #323232;
+  text-align: right;
+  width: 130rpx;
+}
+
+.talbe-wrap {
+  text-align: center;
+}
+
+.row-item .row-content {
+  flex: 1;
+  padding-left: 18rpx;
+}
+
+/****文字居中样式***/
+.text-r {
+  text-align: right !important;
+}
+
+.text-c {
+  text-align: center !important;
+}
+
+.text-l {
+  text-align: left !important;
+}
+
+.placeholder-text {
+  color: #c1c2c5;
+  font-size: 28rpx;
+}
+
+/****间距****/
+
+.mt-20 {
+  margin-top: 20rpx !important;
+}
+
+/***border***/
+.bor-bottom:after {
+	position:absolute;
+	box-sizing:border-box;
+	-webkit-transform-origin:center;
+	transform-origin:center;
+	content:" ";
+	pointer-events:none;
+	top:auto;
+	right:0;
+	bottom:0;
+	left:0;
+	border-bottom:1px solid #ebedf0;
+	-webkit-transform:scaleY(.5);
+	transform:scaleY(.5)
+}

@@ -1,21 +1,88 @@
 /**index.wxss**/
-.userinfo {
+/****轮播***/
+page{
+  background-color: #f8f8f8;
+  height:auto;
+}
+.swiper-wraper{
+  width:100%;
+  margin:6rpx 0;
+}
+swiper{
+  height:360rpx;
+}
+.swiper-item{
+  width:100%;
+  height:100%;
+  display:inline-block;
+}
+
+.swiper-img{
+  width:100%;
+  height:100%;
+}
+/****消息通知****/
+.notice-wraper{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width:100%;
+  justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  border:1px solid #f5f5f5;
+  
+}
+.notice-bar-wraper{
+  flex:1;
+}
+.notice-bar-wraper .van-notice-bar{
+  background-color: #fff;
+  height:40rpx;
+  padding:8rpx 0;
+  font-size:28rpx;
+  color:#ea0f0f;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.more-notice{
+  width:100rpx;
+}
+.more-notice-text{
+  margin-left:26rpx;
+  color:#0078d7;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+/***菜单区域***/
+.menu-wraper{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  padding:0 20rpx; 
+  justify-content: space-between;
+  background-color: #fff;
+  padding-bottom:80rpx;
+
 }
 
-.usermotto {
-  margin-top: 200px;
+.menu-item{
+  border:1px solid #ddd;
+  box-sizing: border-box; 
+  border-radius: 78rpx;
+  margin-top:80rpx;
+  background-color: #fff;
+  padding:36rpx 20rpx;
+  width:340rpx;
+  box-shadow: 2px 3px 2px #ddd;
+}
+.active{
+  background-color:rgba(0,0,0,0.1);
+}
+
+.menu-item .iconfont{
+  font-size:84rpx;
+  color:#569aec;
+  margin-right:20rpx;
+}
+
+.menu-item  .icon-text{
+  font-size:40rpx;
 }

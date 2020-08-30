@@ -1,0 +1,36 @@
+<view class="container">
+	<view class="toptips">
+		<van-notify id="van-notify" />
+	</view>
+	<view class="background-curve"></view>
+	<view class="card">
+		<view class="card-head">
+			<view class="row-item">
+				<text class="row-name">设备SN:</text>
+				<text class="row-content">444444</text>
+			</view>
+			<view class="row-item">
+				<text class="row-name">机型:</text>
+				<text class="row-content">11111</text>
+			</view>
+		</view>
+		<view class="card-body">
+			<view class="talbe-wrap">
+				<view class="label-text uploader-name">维修工单</view>
+				<van-uploader file-list="{{ fileList }}" deletable="{{ true }}" />
+			</view>
+			<view class="talbe-wrap">
+				<view class="label-text uploader-name">校准调试记录表</view>
+				<van-uploader file-list="{{ fileList }}" deletable="{{ true }}" />
+			</view>
+			<view class="talbe-wrap">
+				<view class="label-text uploader-name">交转报告</view>
+				<van-uploader file-list="{{ fileList }}" deletable="{{ true }}" />
+			</view>
+		</view>
+	</view>
+	<view class="form-footer">
+		<van-button type="info" size="small" block bind:click="goBack">上一步</van-button>
+		<van-button type="info" size="small" block bind:click="complete">完结</van-button>
+	</view>
+</view>

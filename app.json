@@ -3,6 +3,12 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
+    "pages/repair/index",
+    "pages/fault/index",
+    "pages/inspection/index",
+    "pages/repairAcceptance/index",
+    "pages/installEquipment/index",
+    "pages/installProduct/index",
     "pages/myInfo/index"
   ],
   "window":{
@@ -15,7 +21,7 @@
     "color": "#6e6d6b",
     "selectedColor": "#2198f2",
     "borderStyle": "white",
-    "backgroundColor": "white",
+    "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/index/index",

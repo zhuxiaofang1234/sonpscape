@@ -33,6 +33,11 @@ App({
       }
     })
   },
+  goBack:function(){
+    wx.navigateBack({
+      delta: 1
+    })  
+  },
   globalData: {
     userInfo: null
   }

@@ -11,6 +11,7 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": true,
 		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
@@ -22,7 +23,9 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"nodeModules": true
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.12.0",
@@ -43,13 +46,56 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "repair",
+					"pathName": "pages/repair/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "fault",
+					"pathName": "pages/fault/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "repairAcceptance",
+					"pathName": "pages/repairAcceptance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "installEquipment",
+					"pathName": "pages/installEquipment/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "installEquipment/index2",
+					"pathName": "pages/installEquipment/index2",
+					"scene": null
+				}
+			]
 		}
 	}
 }

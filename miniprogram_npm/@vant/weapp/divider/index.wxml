@@ -1,7 +1,7 @@
 <wxs src="../wxs/utils.wxs" module="utils" />
 
 <view
-  class="custom-class {{ utils.bem('divider', [{dashed, hairline}, contentPosition]) }}"
+  class="custom-class {{ utils.bem('viewider', [{dashed, hairline}, contentPosition]) }}"
   style="{{ borderColor  ? 'border-color: ' + borderColor + ';' : '' }}{{ textColor ? 'color: ' + textColor + ';' : '' }} {{ fontSize ? 'font-size: ' + fontSize + 'px;' : '' }} {{ customStyle }}"
 >
   <slot />
