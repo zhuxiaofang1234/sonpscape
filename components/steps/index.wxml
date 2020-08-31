@@ -12,7 +12,7 @@
 		<view class="step-main">
 			<view class="step-title_wrap">
 				<view class="step-title is-finish">{{item.text}}</view>
-				<view class="step-title_rate"><van-rate value="{{ value }}" bind:change="onChange" /></view>
+				<view class="step-title_rate"><van-rate value="{{item.value}}" data-index="{{index}}" bind:change="onChange"/></view>
 			</view>
 
 			<view class="step__description is-finish">

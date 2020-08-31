@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
-    "steps":"../../components/steps"
+    "steps":"../../components/steps",
+    "van-uploader": "@vant/weapp/uploader/index"
   },
   "navigationBarTitleText": "产品安装"
 }

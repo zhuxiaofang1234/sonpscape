@@ -23,8 +23,20 @@
 }
 
 .box{
-  height:200rpx;
   width:100%;
-  background-color: darkcyan;
+  padding:10rpx 0;
+  text-align: center;
+}
+
+.box .describe-wrap{
+  font-size:28rpx;
+  text-align: center;
+ padding-bottom:10rpx;
+}
+.box .van-uploader{
+  width:100%;
+}
+.van-uploader .van-uploader__wrapper{
+  justify-content: space-between;
 }
 

@@ -3,16 +3,17 @@
 	<view class="content">
 		<view class="card">
 			<view class="card-body small-padding">
-				<steps steps="{{steps}}" active="{{activeIndex}}">
-					<view slot="step1">
-						<view class="box" bindtap="test"></view>
-					</view>
-					<view slot="step2">
-						<view class="box"></view>
-					</view>
-					<view slot="step3">
-						<view class="box"></view>
-					</view>
+				<steps steps="{{steps}}" active="{{activeIndex}}" bind:rateChange="onRateChange">	
+						<view slot="step1" class="box" bindtap="test">
+							<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" preview-size="100"/>
+							<view class="describe-wrap"><text>外包装防倾倒标识</text></view>
+						</view>
+						<view slot="step2" class="box">
+							<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" preview-size="100"/>
+						</view>	
+						<view slot="step3" class="box">
+							<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" preview-size="100"/>
+						</view>
 				</steps>
 			</view>
 		</view>

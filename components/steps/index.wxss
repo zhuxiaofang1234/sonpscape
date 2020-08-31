@@ -113,13 +113,11 @@
 .step-main  .step-title_wrap{
   display: flex;
   width:100%;
-  background-color: darkgoldenrod;
   justify-content: space-between;
 }
 .step-title_wrap .step-title{
   flex:1
 }
-
 
 .step-item.is-vertical .step-title {
   line-height: 24px;
@@ -134,7 +132,7 @@
 }
 
 .step__description {
-  padding-right: 10%;
+  padding-right: 30rpx;
   margin-top: -5px;
   font-size: 12px;
   line-height: 20px;
@@ -145,6 +143,9 @@
   width:100%;
   height:260rpx;
   background-color: crimson;
+}
+.box:first-child{
+  padding-bottom:20rpx;
 }
 
 .step-item:last-of-type .step-line {
