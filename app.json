@@ -9,6 +9,7 @@
     "pages/repairAcceptance/index",
     "pages/installEquipment/index",
     "pages/installProduct/index",
+    "pages/productTrain/index",
     "pages/myInfo/index"
   ],
   "window":{

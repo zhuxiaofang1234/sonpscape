@@ -20,7 +20,7 @@
 	</view>
 	<view class="footer small-btn-footer">
 		<view class="footer-wrap">
-			<van-button type="info" size="small" block bind:click="next">上一步</van-button>
+			<van-button type="info" size="small" block bind:click="goBack">上一步</van-button>
 			<van-button type="info" size="small" block bind:click="next">确认&培训</van-button>
 		</view>
 	</view>

@@ -1,42 +1,45 @@
 /* pages/installProduct/index.wxss */
-.card-wrap{
+.card-wrap {
   display: flex;
   flex-direction: row;
 }
-.left-area{
-  width:100rpx;
-  height:200px;
- background-color: chocolate;
+
+.left-area {
+  width: 100rpx;
+  height: 200px;
+  background-color: chocolate;
 }
-.right-area{
+
+.right-area {
   flex: 1;
   background-color: cornflowerblue;
 }
 
-.footer.small-btn-footer{
-  height:120rpx;
+.footer.small-btn-footer {
+  height: 120rpx;
 }
 
-.footer.small-btn-footer  .footer-wrap{
+.footer.small-btn-footer .footer-wrap {
   justify-content: space-between;
   padding: 0 30rpx;
 }
 
-.box{
-  width:100%;
-  padding:10rpx 0;
+.box {
+  width: 100%;
+  padding: 10rpx 0;
   text-align: center;
 }
 
-.box .describe-wrap{
-  font-size:28rpx;
+.box .describe-wrap {
+  font-size: 28rpx;
   text-align: center;
- padding-bottom:10rpx;
+  padding-bottom: 10rpx;
 }
-.box .van-uploader{
-  width:100%;
+
+.box .van-uploader {
+  width: 100%;
 }
-.van-uploader .van-uploader__wrapper{
+
+.van-uploader .van-uploader__wrapper {
   justify-content: space-between;
 }
-

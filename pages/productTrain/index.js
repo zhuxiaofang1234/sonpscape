@@ -5,27 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    activeIndex:2,
-    steps: [
-      {
-        text: '外观',
-        desc: '描述信息',
-        value:1
-      },
-      {
-        text: '装箱清单',
-        desc: '描述信息',
-        value:2
-      },
-      {
-        text: '安装环境',
-        desc: '描述信息',
-        value:3
-      }
-    ],
-    fileList: [
-      { url: 'https://img.yzcdn.cn/vant/leaf.jpg', name: '图片1' },
-    ],
+    data: {
+      activeName: "1",
+      fileList: [
+        {
+          url: 'https://img.yzcdn.cn/vant/leaf.jpg',
+          deletable: true,
+        },
+        {
+          url: 'https://img.yzcdn.cn/vant/tree.jpg',
+          deletable: false,
+        },
+      ],
+    }
   },
 
   /**
@@ -35,22 +27,40 @@ Page({
 
   },
 
+  onChange(event) {
+    this.setData({
+      activeName: event.detail,
+    });
+  },
+
   afterRead(event) {
-    const { file } = event.detail;
+    const {
+      file
+    } = event.detail;
     // 当设置 mutiple 为 true 时, file 为数组格式，否则为对象格式
     wx.uploadFile({
       url: 'https://example.weixin.qq.com/upload', // 仅为示例，非真实的接口地址
       filePath: file.path,
       name: 'file',
-      formData: { user: 'test' },
+      formData: {
+        user: 'test'
+      },
       success(res) {
         // 上传完成需要更新 fileList
-        const { fileList = [] } = this.data;
-        fileList.push({ ...file, url: res.data });
-        this.setData({ fileList });
+        const {
+          fileList = []
+        } = this.data;
+        fileList.push({
+          ...file,
+          url: res.data
+        });
+        this.setData({
+          fileList
+        });
       },
     });
   },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -100,23 +110,23 @@ Page({
   onShareAppMessage: function () {
 
   },
-  test:function(){
+  test: function () {
     console.log(33333);
   },
-  onRateChange:function(e){
+  onRateChange: function (e) {
     console.log(e)
   },
 
   //上一步
-  goBack:function(){
+  goBack: function () {
     App.goBack()
   },
 
   //下一步--确认&培训
-  next:function(){
+  next: function () {
     wx.navigateTo({
       url: '/pages/productTrain/index',
     })
   },
- 
+
 })

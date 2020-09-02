@@ -1,0 +1,22 @@
+/* pages/productTrain/index.wxss */
+.row-item .row-name {
+  width:260rpx;
+}
+
+.row-content .van-radio {
+  width: 50%;
+  float: left;
+}
+
+.van-radio .van-radio__label{
+  margin-left:10rpx;
+}
+
+.footer.small-btn-footer {
+  height: 120rpx;
+}
+
+.footer.small-btn-footer .footer-wrap {
+  justify-content: space-between;
+  padding: 0 30rpx;
+}

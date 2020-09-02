@@ -1,2 +1,9 @@
-<!--pages/myInfo/index.wxml-->
-<text>pages/myInfo/index.wxml</text>
+<view class="container padding-60">
+	<view class="content">
+	</view>
+	<view class="footer">
+		<view class="footer-wrap">
+			<van-button type="info"  block bind:click="next">保存</van-button>
+		</view>
+	</view>
+</view>

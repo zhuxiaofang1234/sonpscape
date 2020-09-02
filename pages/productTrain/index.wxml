@@ -1,0 +1,37 @@
+<view class="container padding-60">
+	<view class="background-curve"></view>
+	<view class="content">
+		<view class="card">
+			<view class="card-body small-padding">
+				<van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+					<van-collapse-item title="仪器调试确认" name="1">
+						<view class="collapse-wrap">
+							<view class="row-item row-line">
+								<text class="row-name text-l">功能配置是否正确:</text>
+								<view class="row-content">
+									<van-radio-group value="{{ radio }}" bind:change="onChange">
+										<van-radio name="1" icon-size="18px">是</van-radio>
+										<van-radio name="2" icon-size="18px">否</van-radio>
+									</van-radio-group>
+								</view>
+							</view>
+							<van-uploader file-list="{{ fileList }}" deletable="{{ true }}" />
+						</view>
+					</van-collapse-item>
+					<van-collapse-item title="临床培训" name="2">
+						网店吸粉获客、会员分层营销、一机多种收款，告别经营低效和客户流失
+					</van-collapse-item>
+					<van-collapse-item title="产品验收" name="3">
+						线上拓客，随时预约，贴心顺手的开单收银
+					</van-collapse-item>
+				</van-collapse>
+			</view>
+		</view>
+	</view>
+	<view class="footer small-btn-footer">
+		<view class="footer-wrap">
+			<van-button type="info" size="small" block bind:click="goBack">上一步</van-button>
+			<van-button type="info" size="small" block bind:click="next">完成</van-button>
+		</view>
+	</view>
+</view>

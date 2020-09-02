@@ -1,8 +1,4 @@
 /* pages/repair/index.wxss */
-.van-field__label{
-  font-size:28rpx;
-  color:#323232 !important;
-}
 
 .from-wrap .van-radio{
   width:30%;

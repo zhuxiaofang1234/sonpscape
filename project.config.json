@@ -93,6 +93,13 @@
 					"id": -1,
 					"name": "installEquipment/index2",
 					"pathName": "pages/installEquipment/index2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "productTrain",
+					"pathName": "pages/productTrain/index",
 					"scene": null
 				}
 			]
