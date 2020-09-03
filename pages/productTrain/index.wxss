@@ -1,6 +1,26 @@
 /* pages/productTrain/index.wxss */
+.item-index--van-cell.van-cell {
+  line-height: 100rpx;
+}
+
+.item-index--van-cell .van-cell__right-icon-wrap {
+  height: 100rpx;
+}
+
+.van-cell__title {
+  font-size: 32rpx;
+}
+
+.collapse-wrap .row-item {
+  padding: 20rpx 0 30rpx 0;
+}
+
 .row-item .row-name {
-  width:260rpx;
+  width: 260rpx;
+}
+
+.van-collapse-item__content {
+  padding: 0;
 }
 
 .row-content .van-radio {
@@ -8,13 +28,16 @@
   float: left;
 }
 
-.van-radio .van-radio__label{
-  margin-left:10rpx;
+.van-radio .van-radio__label {
+  margin-left: 10rpx;
 }
 
 .footer.small-btn-footer {
   height: 120rpx;
+  margin-bottom:60rpx;
+  margin-top:60rpx;
 }
+
 
 .footer.small-btn-footer .footer-wrap {
   justify-content: space-between;

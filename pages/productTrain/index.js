@@ -5,19 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    data: {
       activeName: "1",
-      fileList: [
-        {
+      radio: '1',
+      fileList: [{
           url: 'https://img.yzcdn.cn/vant/leaf.jpg',
           deletable: true,
-        },
-        {
-          url: 'https://img.yzcdn.cn/vant/tree.jpg',
-          deletable: false,
-        },
+        }
       ],
-    }
   },
 
   /**
@@ -30,6 +24,12 @@ Page({
   onChange(event) {
     this.setData({
       activeName: event.detail,
+    });
+  },
+
+  configChange(e) {
+    this.setData({
+      radio: e.detail,
     });
   },
 

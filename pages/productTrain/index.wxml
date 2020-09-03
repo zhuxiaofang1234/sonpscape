@@ -2,27 +2,66 @@
 	<view class="background-curve"></view>
 	<view class="content">
 		<view class="card">
-			<view class="card-body small-padding">
+			<view class="card-body">
 				<van-collapse accordion value="{{ activeName }}" bind:change="onChange">
 					<van-collapse-item title="仪器调试确认" name="1">
 						<view class="collapse-wrap">
 							<view class="row-item row-line">
 								<text class="row-name text-l">功能配置是否正确:</text>
 								<view class="row-content">
-									<van-radio-group value="{{ radio }}" bind:change="onChange">
+									<van-radio-group value="{{ radio }}" bind:change="configChange">
 										<van-radio name="1" icon-size="18px">是</van-radio>
 										<van-radio name="2" icon-size="18px">否</van-radio>
 									</van-radio-group>
 								</view>
 							</view>
-							<van-uploader file-list="{{ fileList }}" deletable="{{ true }}" />
+							<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
 						</view>
 					</van-collapse-item>
 					<van-collapse-item title="临床培训" name="2">
-						网店吸粉获客、会员分层营销、一机多种收款，告别经营低效和客户流失
+						<view class="collapse-wrap">
+							<view class="row-item row-line">
+								<text class="row-name text-l">是否有客户培训:</text>
+								<view class="row-content">
+									<van-radio-group value="{{ radio }}" bind:change="configChange">
+										<van-radio name="1" icon-size="18px">是</van-radio>
+										<van-radio name="2" icon-size="18px">否</van-radio>
+									</van-radio-group>
+								</view>
+							</view>
+							<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+						</view>
 					</van-collapse-item>
 					<van-collapse-item title="产品验收" name="3">
-						线上拓客，随时预约，贴心顺手的开单收银
+						<view class="collapse-wrap">
+							<view class="row-item row-line">
+								<text class="row-name text-l">是否需要计量:</text>
+								<view class="row-content">
+									<van-radio-group value="{{ radio }}" bind:change="configChange">
+										<van-radio name="1" icon-size="18px">是</van-radio>
+										<van-radio name="2" icon-size="18px">否</van-radio>
+									</van-radio-group>
+								</view>
+							</view>
+							<view class="row-item row-line">
+								<text class="row-name text-l">安装培训报告</text>
+								<view class="row-content">
+									<van-uploader max-count="2" bind:after-read="afterRead" />
+								</view>
+							</view>
+							<view class="row-item row-line">
+								<text class="row-name text-l">报修卡</text>
+								<view class="row-content">
+									<van-uploader max-count="2" bind:after-read="afterRead" />
+								</view>
+							</view>
+							<view class="row-item row-line">
+								<text class="row-name text-l">校准报告</text>
+								<view class="row-content">
+									<van-uploader max-count="2" bind:after-read="afterRead" />
+								</view>
+							</view>
+						</view>
 					</van-collapse-item>
 				</van-collapse>
 			</view>
